@@ -1,0 +1,19 @@
+.splash-logo-img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    align-items: center;
+    /* text-align: center; */
+    position: relative;
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: center;
+}
+
+.splash-logo-img img{
+    width: 265px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}

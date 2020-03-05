@@ -1,0 +1,128 @@
+// -------manu css-------------
+
+.manu-header{
+    background: #ff8a65;
+    color: #fff;
+}
+
+.manu-bar{
+    color: #fff;
+}
+.info-btn{
+    font-size: 20px;
+    color: #fff;
+    z-index: 99;
+    display: block;
+    float: right;
+    padding-right: 3%;
+    position: relative;
+    cursor: pointer;
+}
+
+// ---------end manu css-----------
+.pro-bdy{
+  padding-bottom: 60px;
+}
+.product-row{
+    display: flex;
+    width: 100%;
+    margin: 0 0 10px 5px;
+}
+
+.frm{
+    padding-left: 0px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.info-frm{
+    color: #757575;
+}
+
+.frm span{
+    color: #757575;
+}
+
+.frm span i{
+    color: #00b7ee;
+    padding-right: 12px;
+}
+
+.box2{
+    width: 165px;
+    background: #efefef;
+    border-radius: 25px 25px 0px 0;
+    margin-right: 10px;
+  }
+  
+  .ribbon{
+      background-image: linear-gradient(to bottom right, #ff0000, #fde0e0);
+      margin-top: 8px;
+      width: 82px;
+      color: #fff;
+      font-size: 15px;
+      padding: 4px 5px;
+      position: relative;
+      left: -4px;
+      z-index: 9999;
+      border-radius: 4px;
+      clip-path: polygon(100% 0, 85% 50%, 100% 100%, 0% 100%, 0 53%, 0% 0%);
+  }
+  .ribbon-remove{
+      background: none;
+      margin-top: 8px;
+      width: 82px;
+      color: #fff;
+      font-size: 15px;
+      padding: 4px 5px;
+      position: relative;
+      left: -4px;
+      z-index: 9999;
+      border-radius: 4px;
+      height: 32px;
+  }
+  .box2-img{
+    width: 100%;
+      text-align: right;
+      padding: 5px;
+  }
+  .box2-img img{
+    width: 105px;
+    height: 100px;
+  }
+  .box2 h6{
+    font-size: 16px;
+    color: #00b7ee;
+    margin: 5px;
+  }
+  .product-price{
+    color: #8b8c8c;
+      padding: 0 5px;
+      margin: 0;
+      position: relative;
+      top: -4px;
+      font-size: 13px;
+  }
+  .product-price span{
+    float: right;
+      color: #eac408;
+  }
+  .btn-buy{
+    width: 100%;
+      text-align: center;
+      background: #00b7ee;
+      color: #fff;
+      font-size: 13px;
+      margin-top: 10px;
+      border-radius: 5px 5px 0 0;
+  }
+  .btn-text{
+    color: #fff;
+      font-size: 13px;
+  }
+
+
+
+
+
+

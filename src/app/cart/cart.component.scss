@@ -1,0 +1,145 @@
+// -------manu css-------------
+
+.manu-header{
+    background: #00b7ee;
+    color: #fff;
+}
+
+.manu-bar{
+    color: #fff;
+}
+.info-btn{
+    font-size: 20px;
+    color: #fff;
+    z-index: 99;
+    display: block;
+    float: right;
+    padding-right: 3%;
+    position: relative;
+    cursor: pointer;
+}
+
+// ---------end manu css-----------
+
+.product-box{
+    margin-top: 16px;
+    // border-bottom: 1px solid #ddd;
+    padding-bottom: 65px;
+}
+.product-img{
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+.product-description h4{
+    font-size: 17px;
+    padding-top: 0;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    color: #3d555ded;
+    font-weight: bold;
+}
+
+.product-description p{
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 2px;
+    color: #a3a7a9;
+}
+
+.detail-btn{
+    text-align: center;
+    padding: 0;
+}
+
+.detail-btn img{
+    width: 72%;
+    margin-bottom: 12px;
+}
+.price{
+    color: #00b7ee !important;
+    font-weight: bold !important;
+    font-size: 15px !important;
+}
+
+.qty{
+    color: #000!important;
+    border: 1px solid #000!important;
+   
+}
+
+.cart-btn{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+}
+
+.sing-btn{
+    background: #00b7ee !important;
+    color: #fff;
+    width: 100%;
+    padding: 0.4rem 0;
+    margin: 1%;
+}
+.remove-btn{
+    background: #fff!important;
+    color: #00b7ee ;
+    width: 100%;
+    padding: 0.4rem 0;
+    margin: 1%;
+    border: 1px solid #00b7ee ;
+}
+
+.chk-btn{
+    margin-top: 10px;
+}
+
+.place-box{
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    // border-top: 1px solid #ddd;
+    bottom: 0;
+    background: #fff;
+}
+
+.order-btn{
+    background: #00b7ee !important;
+    color: #fff;
+    width: 100%;
+    line-height: 30px;
+}
+
+.plus-minus-input {
+    align-items: center;
+    width: 100%;
+  
+    .input-group-field {
+        text-align: center;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        padding: 0.1rem;
+        width: 38%;
+        border: 1px solid #00b7ee;
+  
+      &::-webkit-inner-spin-button,
+      ::-webkit-outer-spin-button {
+        appearance: none;
+      }
+    }
+  
+    .input-group-button {
+      .circle {
+        border-radius: 50%;
+        padding: 0.25em 0.8em;
+        color: #00b7ee;
+      }
+    }
+  }
+  
+  

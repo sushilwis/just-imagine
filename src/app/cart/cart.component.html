@@ -1,0 +1,121 @@
+<ion-header>
+  <!-- <ion-toolbar> -->
+    <div class="head">
+    <ion-buttons slot="start">
+      <ion-menu-button>
+        <img src="/assets/images/manu.png" alt="" class="manu-icon">
+      </ion-menu-button>
+    </ion-buttons>
+    <ion-title class="text-center">
+        Cart
+    </ion-title>
+    <div class="notification">
+      <a routerLink="/cart">
+        <!-- <img src="/assets/images/notification-icon.png" alt=""> -->
+        <i class="fa fa-cart-arrow-down"></i>
+      <span>2</span>
+      </a>
+    </div>
+  </div>
+  <!-- </ion-toolbar> -->
+</ion-header>
+
+  <ion-content>
+    <div class="container">
+      <div class="product-box">
+        <div class="row">
+            <div class="col-7 product-description">
+              <h4>Product Name: ABC1234</h4>
+              <p>It is a long readable 
+                content of a page when looking at its layout.</p>
+              <p>Date: 25 Dec 2018, 12:09 PM</p>
+              <p class="price">₹199/Piece</p>
+            </div>
+      
+            <div class="col-5 detail-btn">
+              <img src="../../assets/images/pro1.png" alt="">
+              <!-- <a href="/product">Details</a> -->
+              <!-- <div class="dropdown">
+                  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                  Qty:1
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">1</a>
+                    <a class="dropdown-item" href="#">2</a>
+                    <a class="dropdown-item" href="#">3</a>
+                    
+                  </div>
+                </div> -->
+
+                <div class="input-group plus-minus-input">
+                    <div class="input-group-button">
+                      <button type="button" class="button hollow circle" data-quantity="minus" data-field="quantity">
+                        <i class="fa fa-minus" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <input class="input-group-field" type="number" name="quantity" value="0">
+                    <div class="input-group-button">
+                      <button type="button" class="button hollow circle" data-quantity="plus" data-field="quantity">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>          
+            </div>
+            
+            <div class="cart-btn">
+              <button type="submit" size="large" expand="block" class="btn sing-btn">Update</button>
+              <button type="submit" size="large" expand="block" class="btn remove-btn">Remove</button>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-7 product-description">
+              <h4>Product Name: ABC1234</h4>
+              <p>It is a long readable 
+                content of a page when looking at its layout.</p>
+              <p>Date: 25 Dec 2018, 12:09 PM</p>
+              <p class="price">₹199/Piece</p>
+            </div>
+      
+            <div class="col-5 detail-btn">
+              <img src="../../assets/images/pro1.png" alt="">
+              <!-- <a href="/product">Details</a> -->
+              <!-- <div class="dropdown">
+                  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                  Qty:1
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">1</a>
+                    <a class="dropdown-item" href="#">2</a>
+                    <a class="dropdown-item" href="#">3</a>
+                    
+                  </div>
+                </div> -->
+    
+                <div class="input-group plus-minus-input">
+                    <div class="input-group-button">
+                      <button type="button" class="button hollow circle" data-quantity="minus2" data-field="quantity2">
+                        <i class="fa fa-minus" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <input class="input-group-field" type="number" name="quantity" value="0">
+                    <div class="input-group-button">
+                      <button type="button" class="button hollow circle" data-quantity="plus2" data-field="quantity2">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>          
+            </div>
+            
+            <div class="cart-btn">
+              <button type="submit" size="large" expand="block" class="btn sing-btn">Update</button>
+              <button type="submit" size="large" expand="block" class="btn remove-btn">Remove</button>
+            </div>
+        </div> 
+        </div>
+        <div class="row place-box">
+          <button routerLink="/checkout" type="submit" size="large" expand="block" class="btn order-btn">Checkout</button>
+        </div>
+        
+    </div>
+  </ion-content>

@@ -1,0 +1,150 @@
+<ion-header>
+  <!-- <ion-toolbar> -->
+    <div class="head">
+    <ion-buttons slot="start">
+      <ion-menu-button>
+        <img src="/assets/images/manu.png" alt="" class="manu-icon">
+      </ion-menu-button>
+    </ion-buttons>
+    <ion-title class="text-center">
+        Checkout
+    </ion-title>
+    <div class="notification">
+      <a routerLink="/notifications">
+        <!-- <img src="/assets/images/notification-icon.png" alt=""> -->
+        <!-- <i class="fa fa-bell-o"></i>
+      <span>2</span> -->
+      </a>
+    </div>
+  </div>
+  <!-- </ion-toolbar> -->
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <div class="row product-box">
+
+      <div class="col-12 product-description">
+        <h4>Billing Address:</h4>
+        <ion-item class="form-group frm">
+          <span><i class="fa fa-user"></i></span>
+          <ion-input type="text" class="info-frm" id="Name" placeholder="Your Name"></ion-input>
+        </ion-item>
+
+        <ion-item class="form-group frm">
+            <span><i class="fa fa-envelope"></i></span>
+            <ion-input type="text" class="info-frm" id="email" placeholder="Email ID"></ion-input>
+          </ion-item>
+
+          <ion-item class="form-group frm">
+              <span><i class="fa fa-phone "></i></span>
+              <ion-input type="text" class="info-frm" id="phone" placeholder="Phone Number" ></ion-input>
+          </ion-item>
+
+        <ion-item class="form-group frm">
+          <span><i class="fa fa-home"></i></span>
+          <ion-input type="text" class="info-frm" id="address" placeholder="Address Line1" ></ion-input>
+        </ion-item>
+        
+        <ion-item class="form-group frm">
+            <span><i class="fa fa-home"></i></span>
+            <ion-input type="text" class="info-frm" id="address" placeholder="Address Line2" ></ion-input>
+          </ion-item>
+        
+          <div class="frm-part">
+              <ion-item class="form-group frm">
+                  <span><i class="fa fa-map-marker"></i></span>
+                  <ion-input type="text" class="info-frm" id="city" placeholder="City" ></ion-input>
+                </ion-item>
+                
+                <ion-item class="form-group frm">
+                    <span><i class="fa fa-venus"></i></span>
+                    <ion-input type="text" class="info-frm" id="Pin" placeholder="Pin" ></ion-input>
+                  </ion-item>
+          </div>
+
+          <ion-item class="form-group frm">
+              <span><i class="fa fa-venus"></i></span>
+              <ion-input type="text" class="info-frm" id="state" placeholder="State" ></ion-input>
+            </ion-item>
+      </div>
+      
+      <!-- <div class="col-5 detail-btn">
+        <img src="../../assets/images/pro1.png" alt="">
+        <a href="/product">Details</a>
+        <div class="dropdown">
+            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+             Qty:1
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">1</a>
+              <a class="dropdown-item" href="#">2</a>
+              <a class="dropdown-item" href="#">3</a>
+              
+            </div>
+          </div>
+
+          <div class="input-group plus-minus-input">
+              <div class="input-group-button">
+                <button type="button" class="button hollow circle" data-quantity="minus" data-field="quantity">
+                  <i class="fa fa-minus" aria-hidden="true"></i>
+                </button>
+              </div>
+              <input class="input-group-field" type="number" name="quantity" value="0">
+              <div class="input-group-button">
+                <button type="button" class="button hollow circle" data-quantity="plus" data-field="quantity">
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>          
+      </div> -->
+     
+      <!-- <div class="cart-btn">
+        <button type="submit" size="large" expand="block" class="btn sing-btn">Update</button>
+        <button type="submit" size="large" expand="block" class="btn sing-btn">Remove</button>
+      </div> -->
+      
+      <!-- <div class="col-12 product-description">
+        <hr>
+        <h4>Shapping Address:</h4>
+        <p class="shp-text">In publishing and graphic design, Lorem ipsum is a placeholder text commonly
+           used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
+           <br>
+        <p>Date: 25 Dec 2018, 12:09 PM</p>
+        <p>Phone: 6535214250</p>
+        <p>Alt Phone: 6547514250</p>
+      </div> -->
+            
+     
+     
+      <div class="col-12 payment">
+        <h4>Payment Method</h4>
+          <div class="custom-control custom-radio custom-control-inline pad-boot">
+            <input type="radio" class="custom-control-input" id="customRadio" name="example1" value="customEx">
+            <label class="custom-control-label" for="customRadio">Cradit</label>
+          </div> 
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="customRadio2" name="example1" value="customEx">
+            <label class="custom-control-label" for="customRadio2">Cash</label>
+          </div> 
+         <!-- <div class="account-box">
+            
+                <h5>Account Details</h5>
+                <p><strong>Name: Srabanti Adhikary</strong><br>
+                  A/C No: 102333562<br>
+                  IFSC code: 1445
+                </p>
+               
+         </div> -->
+          
+      </div>
+      
+      
+    </div>
+
+    <div class="row place-box">
+       <button routerLink="/thankyou" type="submit" size="large" expand="block" class="btn order-btn">Place Order</button>
+     </div>
+   
+  </div>
+</ion-content>
