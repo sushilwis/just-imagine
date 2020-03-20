@@ -88,7 +88,7 @@ export class RegisterComponent implements OnInit {
   //------------------------------------------------------------------
   onSubmit() {
     // console.log('submit clicked....');    
-    console.log('submit clicked....',this.registerForm, this.registerForm.hasError('notSame'), this.registerForm.controls, this.registerForm.invalid);    
+    console.log('submit clicked....',this.registerForm.hasError('notSame'), this.registerForm.controls, this.registerForm.invalid);    
     this.showLoader = true;
 
     if (this.registerForm.invalid) {

@@ -4,8 +4,9 @@ import { Router } from '@angular/router';
 import { DataService } from 'src/app/helper/apiService/data.service';
 import { CommonfunctionService } from 'src/app/helper/commonfunction/commonfunction.service';
 import { ToastService } from 'src/app/helper/toast/toast.service';
-// import { NavController } from '@ionic/angular';
+import { NavController } from '@ionic/angular';
 import { OtpverifyComponent } from '../otpverify/otpverify.component';
+
 
 @Component({
   selector: 'app-signin',
@@ -23,7 +24,7 @@ export class SigninComponent implements OnInit {
     private formBuilder: FormBuilder,
     private commonfunc: CommonfunctionService,
     private toast: ToastService,
-    // private navCtrl: NavController
+    private navCtrl: NavController
     ) { 
     
   }
@@ -105,20 +106,13 @@ export class SigninComponent implements OnInit {
 
 
 
-  //------------------------------------------------------------------
-  //------ going to otp verify page
-  //------------------------------------------------------------------
+
   goToForgot(){
-    this.commonfunc.goToForward('/main/auth/otpverify');
+    this.navCtrl.navigateForward('/main/auth/otpverify');
   }
 
-
-
-  //------------------------------------------------------------------
-  //------ going to register page
-  //------------------------------------------------------------------
   goToRegister(){
-    this.commonfunc.goToForward('/main/auth/register');
+    this.navCtrl.navigateForward('/main/auth/register');
   }
 
 

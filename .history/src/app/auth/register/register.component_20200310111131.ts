@@ -71,9 +71,6 @@ export class RegisterComponent implements OnInit {
     let pass = group.get('password').value;
     let confirmPass = group.get('confirm_password').value;
     // return pass === confirmPass ? null : { notSame: true }  
-
-    console.log('both passwords : ', pass, confirmPass);
-
     if(pass === confirmPass){
       return null;
     }else{      
@@ -87,8 +84,8 @@ export class RegisterComponent implements OnInit {
   //------ Submit register form
   //------------------------------------------------------------------
   onSubmit() {
-    // console.log('submit clicked....');    
-    console.log('submit clicked....',this.registerForm, this.registerForm.hasError('notSame'), this.registerForm.controls, this.registerForm.invalid);    
+    console.log('submit clicked....');    
+    // console.log('submit clicked....',this.registerForm.hasError);    
     this.showLoader = true;
 
     if (this.registerForm.invalid) {
@@ -99,7 +96,6 @@ export class RegisterComponent implements OnInit {
           let toast = await this.toast.presentToast('Info!', data[0].errorText, "danger"); 
           toast.present();
         } else{
-          
           let toast = await this.toast.presentToast('Info!', 'Password Not Match', "danger"); 
           toast.present();
         } 
@@ -157,17 +153,6 @@ export class RegisterComponent implements OnInit {
         phone: trim
       });
     }      
-  }
-
-
-
-
-
-  //------------------------------------------------------------------
-  //------ going to login page
-  //------------------------------------------------------------------
-  gotoLoginPage(){
-    this.commonfunc.goToForward("/main/auth/login");
   }
 
 

@@ -71,8 +71,8 @@ export class RegisterComponent implements OnInit {
     let pass = group.get('password').value;
     let confirmPass = group.get('confirm_password').value;
     // return pass === confirmPass ? null : { notSame: true }  
-
-    console.log('both passwords : ', pass, confirmPass);
+    
+    console.log(pass, confirmPass);
 
     if(pass === confirmPass){
       return null;
@@ -88,7 +88,7 @@ export class RegisterComponent implements OnInit {
   //------------------------------------------------------------------
   onSubmit() {
     // console.log('submit clicked....');    
-    console.log('submit clicked....',this.registerForm, this.registerForm.hasError('notSame'), this.registerForm.controls, this.registerForm.invalid);    
+    console.log('submit clicked....',this.registerForm.hasError('notSame'), this.registerForm.controls, this.registerForm.invalid);    
     this.showLoader = true;
 
     if (this.registerForm.invalid) {
